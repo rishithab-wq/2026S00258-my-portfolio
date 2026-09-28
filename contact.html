@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>document</title>
+</head>
+<body>
+        <header>
+             <nav>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="project.html">project</a>
+                <a href="contact.html">contact</a>
+             </nav>
+        </header> 
+     <form action="submit">
+         <label for="name">your name</label>
+         <input type="text" id="name" name="name" required/>
+         <label for="mobile_number">mobile_number</label>
+         <input type="text" id="mobile_number" name="mobile number" required/>
+         <label for="email">email id</label>
+         <input type="email" name="email"id="email" required/>
+         <label for="reason"> reason for reaching out</label>
+         <select name="reason" id="reason">
+             <option value="discussion">discussion on new project</option>
+             <option value="error">errors on existing project</option>
+             <option value="job">job oppurtunities</option>
+        </select>
+        <label for="discussion">discussion</label>
+        <textarea name="discussion"id="discusion" placeholder="comments.."></textarea>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+     </form>
+</body>
+</html>
+        
+
