@@ -4,6 +4,8 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <title>document</title>
+     <title>HTML Accessibility example</title>
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
         <header>
@@ -14,7 +16,27 @@
                 <a href="contact.html">contact</a>
              </nav>
         </header> 
-     <form action="submit">
+        <main>
+          <section>
+     <form action="submit" method="post">
+      <fieldset>
+          <legend>personal information</legend>
+          <label for="firstname">first name</label>
+          <input type]="text" id="firstname" name="first_name" pattern="[A-Za-z]{5,10}" title="first_name should be between 5-10 characters" required>
+          <video controls>
+               <source src="path of the file" type="video/mp4">
+          </video>
+          <audio controls>
+               <source src="path of the file" type="audio/mpeg">
+          </audio>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-0NfIzrQSpQ?si=Qs8wt8S678BolfXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+"
+          <label for="lastname">last name</label>
+          <input type="text" id="lastname" name="last name" pattern="[A-Za-z]{5,10}" title="last name should between 5-10 characters" required>
+          <label for="phone">phone number</label>
+          <input type="tel" pattern="[6-9][0-9]{9}"
+          title="please enter a valid 10-digit indian phone number starting with 6-9" required>
+      </fieldset>
          <label for="name">your name</label>
          <input type="text" id="name" name="name" required/>
          <label for="mobile_number">mobile_number</label>
@@ -32,7 +54,7 @@
         <button type="reset">reset</button>
         <button type="submit">submit</button>
      </form>
-</body>
+/body>
 </html>
         
 
